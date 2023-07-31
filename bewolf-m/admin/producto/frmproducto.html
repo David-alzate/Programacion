@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+	<title>Ingresar Producto</title>
+ 
+</head>
+<meta charset="UTF-8">
+   <meta name="viewport" content= "width=device-width, initial-scale=1.0 ">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" type="image/x-icon" href="Hamburguesa.ico" />
+<body>
+ <div>
+	<form action="guardarproducto.php" method="post" enctype="multipart/form-data">
+    <section class="form-register">
+     <a href="./../admin.php"> <img class="botons"  src="atras.png" style="padding-right: 10px;padding-left: 10px;padding-top: 10px;width: 45px; float: right;padding-bottom: 10px;margin-bottom: 1px;margin-top: 10px;"><a>&nbsp;</a>
+
+    <h2>Ingresar nuevo producto</h2>
+  	<div>
+    	<label style="font-size:30px;margin-top: 10px" for="codigo">Código</label>
+    	<input  class="controls" type="text" id="codigo" name="codigo" placeholder="Código del producto">
+    </div>
+    <div>
+    	<label style="font-size:30px" for="nombre">Nombre</label>
+    	<input  class="controls" type="text" id="nombre" name="nombre" placeholder="Nombre del producto">
+    </div>
+    <div>
+    	<label style="font-size:30px" for="cuartel">Descripcion</label>
+    	<input class="controls"  type="text" id="descripcion" name="descripcion" placeholder="Descripcion del producto">
+    </div>
+     <div>
+      <label style="font-size:30px" for="cuartel">Precio</label>
+      <input class="controls"  type="text" id="precio" name="precio" placeholder="Precio">
+    </div>
+    <div>
+      <label style="font-size:30px"for="cuartel">imagen</label>
+      <input class="controls"  type="file" id="imagen" name="imagen" placeholder="Ingrese la imagen">
+    </div>
+
+  <button class="botons" type="submit">Enviar</button>
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>

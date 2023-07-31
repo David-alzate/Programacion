@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DisplayDriverUninstaller Version="18.0.3.7">
+	<LogEntries>
+		<Event>
+			<Time>4/25/2021 12:42:58 AM</Time>
+			<Message>The following paths are detected.</Message>
+			<Values Separator=" = ">
+				<KvP>
+					<Key>[Found] AppExeFile</Key>
+					<Value>D:\#usuario\Desktop\Optimización v3 [RickyEdit ft. Adamx]\3 Gráficos\2 Limpiar Drivers\Display Driver Uninstaller.exe</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] AppBase</Key>
+					<Value>D:\#usuario\Desktop\Optimización v3 [RickyEdit ft. Adamx]\3 Gráficos\2 Limpiar Drivers\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Settings</Key>
+					<Value>D:\#usuario\Desktop\Optimización v3 [RickyEdit ft. Adamx]\3 Gráficos\2 Limpiar Drivers\Settings\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Logs</Key>
+					<Value>D:\#usuario\Desktop\Optimización v3 [RickyEdit ft. Adamx]\3 Gráficos\2 Limpiar Drivers\DDU Logs\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] Language</Key>
+					<Value>D:\#usuario\Desktop\Optimización v3 [RickyEdit ft. Adamx]\3 Gráficos\2 Limpiar Drivers\Settings\Languages\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] ProgramFiles</Key>
+					<Value>C:\Program Files\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] ProgramFilesx86</Key>
+					<Value>C:\Program Files (x86)\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] Roaming</Key>
+					<Value>C:\ProgramData\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Not found] AppBaseRoaming</Key>
+					<Value>C:\ProgramData\DisplayDriverUninstaller\</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>[Found] SystemDrive</Key>
+					<Value>C:\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] WinDir</Key>
+					<Value>C:\Windows\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] UserPath</Key>
+					<Value>C:\Users\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] System32</Key>
+					<Value>C:\Windows\system32\</Value>
+				</KvP>
+				<KvP>
+					<Key>[Found] SysWOW64</Key>
+					<Value>C:\Windows\SysWOW64\</Value>
+				</KvP>
+			</Values>
+		</Event>
+		<Event>
+			<Time>4/25/2021 12:43:19 AM</Time>
+			<Message>System Information</Message>
+			<Values Separator=" : ">
+				<KvP>
+					<Key>DDU Version</Key>
+					<Value>18.0.3.7</Value>
+				</KvP>
+				<KvP>
+					<Key>OS</Key>
+					<Value>Windows 10</Value>
+				</KvP>
+				<KvP>
+					<Key>Win 10 1809+ ?</Key>
+					<Value>True</Value>
+				</KvP>
+				<KvP>
+					<Key>Architecture</Key>
+					<Value>x64</Value>
+				</KvP>
+				<KvP>
+					<Key>UserRights</Key>
+					<Value>Admin</Value>
+				</KvP>
+				<KvP>
+					<Key>Arguments</Key>
+					<Value>&lt;empty&gt;</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>GPU #0000</Key>
+					<Value>NVIDIA GeForce RTX 2080 Ti</Value>
+				</KvP>
+				<KvP>
+					<Key>GPU DeviceID</Key>
+					<Value>pci\ven_10de&amp;dev_1e07</Value>
+				</KvP>
+				<KvP>
+					<Key>Vbios</Key>
+					<Value>Version90 02.17.00.78</Value>
+				</KvP>
+				<KvP>
+					<Key>Detected Driver(s) Version(s)</Key>
+					<Value>27.21.14.6589</Value>
+				</KvP>
+				<KvP>
+					<Key>INF name</Key>
+					<Value>oem4.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>INF section</Key>
+					<Value>Section002</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Key>GPU #0001</Key>
+					<Value>NVIDIA GeForce RTX 2080 Ti</Value>
+				</KvP>
+				<KvP>
+					<Key>GPU DeviceID</Key>
+					<Value>pci\ven_10de&amp;dev_1e04&amp;subsys_8550103c</Value>
+				</KvP>
+				<KvP>
+					<Key>Vbios</Key>
+					<Value>Version90 02.17.00.a4</Value>
+				</KvP>
+				<KvP>
+					<Key>Detected Driver(s) Version(s)</Key>
+					<Value>27.21.14.6589</Value>
+				</KvP>
+				<KvP>
+					<Key>INF name</Key>
+					<Value>oem5.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>INF section</Key>
+					<Value>Section094</Value>
+				</KvP>
+				<KvP />
+			</Values>
+		</Event>
+		<Warning>
+			<Time>4/25/2021 12:43:19 AM</Time>
+			<Message>We are not in Safe Mode</Message>
+		</Warning>
+		<Event>
+			<Time>4/25/2021 12:43:19 AM</Time>
+			<Message>The following third-party driver packages are installed on this computer</Message>
+			<Values Separator=" = ">
+				<KvP>
+					<Value>C:\Windows\inf\oem0.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Microsoft</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Printer</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem1.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Microsoft</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Printer</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem10.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>SoftwareComponent</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem11.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>SoftwareComponent</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem12.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Razer Inc</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>HIDClass</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem16.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Net</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem17.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>TC-Helicon</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>MEDIA</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem18.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>TC-Helicon</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>goxlr_audio_sc</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem2.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel Corporation</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Bluetooth</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem20.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>AstroGaming</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>USB</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem21.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Microsoft</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Printer</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem3.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Intel</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>System</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem4.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>NVIDIA</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Display</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem5.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>NVIDIA</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Display</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem6.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Disc Soft Ltd</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>System</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem7.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Disc Soft Ltd</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>NetService</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem8.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Snap Inc.</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>Camera</Value>
+				</KvP>
+				<KvP />
+				<KvP>
+					<Value>C:\Windows\inf\oem9.inf</Value>
+				</KvP>
+				<KvP>
+					<Key>Provider</Key>
+					<Value>Nefarius Software Solutions e.U.</Value>
+				</KvP>
+				<KvP>
+					<Key>Class</Key>
+					<Value>System</Value>
+				</KvP>
+				<KvP />
+			</Values>
+		</Event>
+		<Event>
+			<Time>4/25/2021 12:43:42 AM</Time>
+			<Message>Trying to impersonate the SYSTEM account... SUCCESS !</Message>
+			<Values Separator=" : ">
+				<KvP>
+					<Key>Number of process to check</Key>
+					<Value>146</Value>
+				</KvP>
+				<KvP>
+					<Key>Intelligent standby list cleaner ISLC</Key>
+					<Value>Skipping : S-1-5-21-1646688486-3407563508-2005920001-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>wallpaper32</Key>
+					<Value>Skipping : S-1-5-21-1646688486-3407563508-2005920001-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>RuntimeBroker</Key>
+					<Value>Skipping : S-1-5-21-1646688486-3407563508-2005920001-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>taskhostw</Key>
+					<Value>Skipping : S-1-5-21-1646688486-3407563508-2005920001-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>svchost</Key>
+					<Value>Skipping : S-1-5-21-1646688486-3407563508-2005920001-1001</Value>
+				</KvP>
+				<KvP>
+					<Key>NVDisplay.Container</Key>
+					<Value>S-1-5-18</Value>
+				</KvP>
+				<KvP>
+					<Key>NVDisplay.Container</Key>
+					<Value>SYSTEM account impersonalisation SUCCESS</Value>
+				</KvP>
+			</Values>
+		</Event>
+		<Event>
+			<Time>4/25/2021 12:43:42 AM</Time>
+			<Message>Reverting the Impersonalisation is successful !</Message>
+		</Event>
+		<Event>
+			<Time>4/25/2021 12:47:41 AM</Time>
+			<Message>&gt;&gt; Successfully saved log to file!</Message>
+		</Event>
+	</LogEntries>
+</DisplayDriverUninstaller>

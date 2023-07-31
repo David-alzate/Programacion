@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image:url('back.jpg');
+}
+
+.form-register{
+	width:450px;
+	background:#212529;
+	padding: 30px;
+	margin: auto;
+	margin-top: 60px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	font-size: 8px;
+	color:#efc734;
+	box-shadow: 7px 13px 37px #00;
+	-webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+}
+
+
+
+
+.form-register p{
+	height: 35px;
+	text-align:center;
+	font-size:80px;
+	line-height: 40px;
+	margin-top: 5px;
+
+	
+}
+
+.form-register a {
+	color: white;
+	
+
+}
+.form-register h1{
+	margin-top: 30px;
+	height: 40px;
+	text-align:center;
+	font-size:30px;	
+}

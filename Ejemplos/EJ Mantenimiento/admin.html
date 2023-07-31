@@ -1,0 +1,32 @@
+<?php 
+ session_start();
+  if (isset($_SESSION["nombre"])){
+  //ingresa derecho
+  }else{
+  	  header("location:index.html");
+  	  exit();
+  }
+
+
+ ?>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina principal</title>
+	<a href="mostrarequipo.php">
+</head>
+<body>
+
+<table border="1" align="center">
+	 	<tr>
+	 		<td> <a href="frmequipo.html">Ingresar Equipo</a></td>
+	 	</tr>
+	 	<tr>
+	 		<td> <a href="mostarequipo.php">Mostrar Equipo</a></td>
+	    </tr>
+
+	 	
+</body>
+
+</html>

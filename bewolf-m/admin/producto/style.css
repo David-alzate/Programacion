@@ -1,0 +1,130 @@
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image:url('back.jpg');
+}
+
+.form-register{
+	width:460px;
+	background:#212529;
+	padding: 40px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	font-size: 3px;
+	color:#efc734;
+	box-shadow: 7px 13px 37px #00;
+	-webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+}
+
+
+.controls{
+    
+	width: 95%;
+	background:#24242c;
+	padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px,
+    border:5px solid ;
+    font-family: 'calibri';
+    font-size: 18px;
+    font color: white;
+    color:white;
+
+}
+
+.form-register .botons {
+width: 100%;
+background: #efc734;
+border: none;
+padding: 15px;
+color: #212529;
+margin: 16px 0;
+font-size: 20px;
+border-bottom-color: #00;
+-webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+ 
+text-shadow: 1px 1px 1px #00;
+  -webkit-box-shadow: 2px 3px 24px #191919;
+  -moz-box-shadow: 2px 3px 24px #191919;
+  box-shadow: 2px 3px 24px #191919;
+ 
+font-family: calibri;
+  cursor:pointer;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+
+}
+.form-register p{
+	height: 35px;
+	text-align:center;
+	font-size:20px;
+	line-height: 40px;
+	
+}
+.form-register a {
+	color: white;
+	text-decoration:none;
+
+}
+.form-register h2{
+	margin-top: 0px;
+	height: 30px;
+	text-align:left;
+	font-size:30px;	
+}
+.form-register h1{
+	margin-top: 30px;
+	height: 40px;
+	text-align:center;
+	font-size:30px;	
+}
+a.button {
+width: 100%;
+background: #efc734;
+border: none;
+padding: 12px;
+color: #212529;
+margin: 16px 0;
+font-size: 20px;
+-webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+ 
+text-shadow: 1px 1px 1px #00;
+  -webkit-box-shadow: 2px 3px 24px #191919;
+  -moz-box-shadow: 2px 3px 24px #191919;
+  box-shadow: 2px 3px 24px #191919;
+ 
+font-family: calibri;
+  
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+
+}
+a.button {
+width: 100%;
+background: #efc734;
+border: none;
+padding: 12px;
+color: #212529;
+margin: 16px 0;
+-webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  
+ 
+
+
+}

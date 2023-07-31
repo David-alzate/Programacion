@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" href="img/icono2.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	<title>Form</title>
+</head>
+<body>
+  <form class="form">
+    <div class="form-1">
+      <div>
+        <label class="label">Nombre</label>
+      </div>
+       <div>
+         <input class="input" type="tetx" name="name" placeholder="INGRESE SU NOMBRE">
+       </div>
+
+       <div>
+        <label class="label">Apellido</label>
+      </div>
+       <div>
+         <input class="input" type="tetx" name="apellido" placeholder="INGRESE SU APELLIDO">
+       </div>
+
+       <div>
+        <label class="label">Edad</label>
+      </div>
+       <div>
+         <input class="input" type="int" name="edad" placeholder="INGRESE SU EDAD">
+       </div>
+
+       <div>
+        <label class="label">Correo</label>
+      </div>
+       <div>
+         <input class="input" type="email" name="correo" placeholder="INGRESE SU CORREO">
+       </div>
+
+       <div>
+        <label class="label">Contraseña</label>
+      </div>
+       <div>
+         <input class="input-c" type="password" name="password" id="password" placeholder="INGRESE SU CONTRASEÑA">
+       </div>
+       
+       <div>
+        <button class="boton-m" type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+          <script>
+            function mostrarContrasena(){
+             var tipo = document.getElementById("password");
+              if(tipo.type == "password"){
+                 tipo.type = "text";
+             }else{
+                 tipo.type = "password";
+              }
+             }
+</script> 
+       </div>
+
+       <div>
+         <button type="submit" class="boton">Enviar</button>
+       </div>
+
+    </div>
+     
+  </form>
+  
+
+</body>
+</html>

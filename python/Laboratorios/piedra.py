@@ -104,6 +104,4 @@ def dosjugadores():
         print("\nSeleccione una opcion correcta\n")
         menu()
     
-    
-    
 menu()
