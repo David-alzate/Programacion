@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-
+ 
     int edad = 0;
     string nombre;
 
