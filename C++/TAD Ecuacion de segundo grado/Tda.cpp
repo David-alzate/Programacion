@@ -42,6 +42,13 @@ TDAEcuacionSegundoGrado interceptoY(TDAEcuacionSegundoGrado a, TDAEcuacionSegund
 	return resultado;
 }
 
+TDAEcuacionSegundoGrado MostrarEcuacion(TDAEcuacionSegundoGrado a, TDAEcuacionSegundoGrado b, TDAEcuacionSegundoGrado c){
+	TDAEcuacionSegundoGrado resultado;
+	resultado.ecuaciona = (a.ecuaciona);
+	resultado.ecuacionb = (b.ecuacionb);
+	resultado.ecuacionc = (c.ecuacionc);
+	return resultado;
+}
 
 int main(){
 	
@@ -73,5 +80,7 @@ cout<<"La ecuacion es = "<<a.ecuaciona<<"x^2+"<<b.ecuacionb<<"x+"<<c.ecuacionc<<
 r = interceptoY(a,b,c);
 cout<<"4) Hallar el intercepto en y "<<endl<<endl;
 cout<<"El intercepto en y de la ecuacion "<<a.ecuaciona<<"x^2+"<<b.ecuacionb<<"x+"<<c.ecuacionc<<" Es = "<<c.ecuacionc<<endl<<endl;
+cout<<"5) Mostrar ecuacion"<<endl<<endl;
+cout<<"La ecuacion es = "<<a.ecuaciona<<"x^2+"<<b.ecuacionb<<"x+"<<c.ecuacionc<<endl<<endl;
 	return 0;
 }
