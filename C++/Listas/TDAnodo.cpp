@@ -61,15 +61,14 @@ void modificar(nodo *mod){
     if (mod == NULL){
         cout<< "Sin datos" <<endl;
     }else{
-        
+        cout<< "nada" <<endl;
+}
 }
 
 
-int main() {
+int main(){
    nodo *minodo = crearnodo();
    imprimir(minodo);
    
-   
-      
     return 0;
 }
