@@ -23,7 +23,6 @@ TDAproducto *ingresar(string nombre, string descripcion, int codigo, float preci
 void removepro (TDAproducto *prod){
     prod = NULL;
     delete prod;
-
     cout<< prod <<endl;
 }
 
@@ -41,12 +40,5 @@ int main() {
     cout<< producto -> precio <<endl;
     removepro(producto);
     cout<< producto-> nombre <<endl;
-    
-
-
- 
-
-    
-      
     return 0;
 }
