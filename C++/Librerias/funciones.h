@@ -1,17 +1,17 @@
-float suma (int x, int y ){
+float suma (float x, float y ){
     return x + y;
 }
 
-float resta (int x, int y ){
+float resta (float x, float y ){
     return x - y;
 }
 
-float multiplicacion (int x, int y ){
+float multiplicacion (float x, float y ){
     return x * y;
 }
 
 
-float division (int x, int y ){
+float division (float x, float y ){
     return x / y;
 }
 
