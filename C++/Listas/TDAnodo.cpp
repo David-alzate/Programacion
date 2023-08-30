@@ -2,73 +2,115 @@
 
 using namespace std;
 
-struct TDAfechas
-{
+struct TDAFecha{
     int d;
     int m;
     int year;
 };
 
-
-struct nodo
-{
-    TDAfechas feinicio;
-    TDAfechas fefin;
-    nodo *sig;
-    
+struct nodo{
+    TDAFecha feInicio;
+    TDAFecha feFin;
+    nodo     *Sig;
 };
 
+int NumeroDias(int m)
+{   int dias;
+    if (m = 2)
+        dias=28;
+    else
+        if ((m <=7 and m % 2 !=0) or (m >=8 and m % 2 ==0))
+            dias=31;
+        else
+            dias = 30;
+    return dias;
+}
 
- TDAfechas leerfecha(){
-        TDAfechas fecha;
-        cout<< "Ingrese mes" <<endl;
-        cin>> fecha.m;
-        cout<< "Ingrese dia" <<endl;
-        cin>> fecha.d;
-        cout<< "Ingrese año" <<endl;
-        cin>> fecha.year;
-        return fecha;
+bool ValidarFecha(TDAFecha fe){
+    bool validar = true;
+    if (fe.m<1 or fe.m>12)
+        validar = false;
+    else {
+        int nro = NumeroDias(fe.m);
+        if (fe.d<=0 or fe.d >nro)
+            validar = false;
     }
+    return validar;
+}
 
-nodo *crearnodo(){
+TDAFecha LeerFecha()
+{
+        TDAFecha Fecha;
+        cout<<"Ingrese el mes: ";
+        cin>>Fecha.m; //Realizar la validacion
+        cout<<"Ingrese el dia: ";
+        cin>>Fecha.d;
+        cout<<"Ingrese el a�o: ";
+        cin>>Fecha.year;
+        if (ValidarFecha(Fecha))
+            return Fecha;
+        else {
+            cout<<" Fecha invalida,  Vuelve a Ingresarla "<<endl;
+            LeerFecha();
+        }
+}
+
+nodo *crearNodo()
+{
     nodo *nuevo;
-    nuevo = new(nodo);
-    nuevo->feinicio = leerfecha();
-    nuevo->fefin = leerfecha();
-    nuevo->sig = NULL;
+    nuevo=new(nodo);
+    cout<<"----------------------------------------------"<<endl;
+    cout<<"    FECHA DE INICIO"<<endl;
+    nuevo->feInicio = LeerFecha();
+    cout<<"----------------------------------------------"<<endl;
+    cout<<"    FECHA DE FIN"<<endl;
+    nuevo->feFin    = LeerFecha();
+    nuevo->Sig=NULL;
     return nuevo;
 
 }
 
-void imprimir(nodo *imp){
-    if (imp == NULL){
-        cout<< "Sin datos" <<endl;
-    }else{
-        cout<< "Fecha inicio" <<endl;
-        cout<<"Dia: "<< imp->feinicio.d <<endl;
-        cout<<"Mes: "<< imp->feinicio.m <<endl;
-        cout<<"Año: "<< imp->feinicio.year <<endl;
-
-        cout<< "Fecha fin" <<endl;
-        cout<< "Dia: " << imp->fefin.d <<endl;
-        cout<< "Mes: " << imp->fefin.m <<endl;
-        cout<< "Año: " << imp->fefin.year <<endl;
+void Imprimir(nodo *Imp)
+{
+    if(Imp==NULL){
+        cout<<"No hay datos";
     }
-
+    else{
+        cout<<"Fecha-Inicio"<<endl;
+        cout<<Imp->feInicio.d<<endl;
+        cout<<Imp->feInicio.m<<endl;
+        cout<<Imp->feInicio.year<<endl;
+        cout<<"Fecha Fin"<<endl;
+        cout<<Imp->feFin.d<<endl;
+        cout<<Imp->feFin.m<<endl;
+        cout<<Imp->feFin.year<<endl;
+    }
 }
 
-void modificar(nodo *mod){
-    if (mod == NULL){
-        cout<< "Sin datos" <<endl;
-    }else{
-        cout<< "nada" <<endl;
-}
-}
-
-
-int main(){
-   nodo *minodo = crearnodo();
-   imprimir(minodo);
-   
-    return 0;
+void modificar(nodo *modi)
+{
+    int opcion;
+    if(modi==NULL){
+        cout<<"No hay datos";
+    }
+    else{
+        cout<<"MENU"<<endl;
+        cout<<"\n\n\n1. Modificar Fecha de Inicio";
+        cout<<"\n\n\n2. Modificar Fecha de Fin";
+        cout<<"\n\n\n3. Modificar ambas fechas";
+        cout<<"\n\nSeleccionar Opci�n:  ";
+        cin>>opcion;
+        switch (opcion){
+            case 1:
+                 modi->feInicio=LeerFecha();
+                 break;
+            case 2:
+                 modi->feFin=LeerFecha();
+                 break;
+            case 3:
+                 modi->feInicio=LeerFecha();
+                 modi->feFin=LeerFecha();
+                 break;
+        }
+    }
 }
