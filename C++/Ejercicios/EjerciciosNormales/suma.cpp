@@ -4,7 +4,7 @@ using namespace std;
 
 int vol;
 
-suma(int a,int b){
+float suma(int a,int b){
 	cout<<"Ingrese el primer numero"<<endl;
 	cin>> a;
 	cout<<"Ingrese el segundo numero"<<endl;
@@ -12,7 +12,7 @@ suma(int a,int b){
 	return(a+b);
 }
 
-resta(int a,int b){
+float resta(int a,int b){
 	cout<<"Ingrese el primer numero"<<endl;
 	cin>> a;
 	cout<<"Ingrese el segundo numero"<<endl;
@@ -20,7 +20,7 @@ resta(int a,int b){
 	return(a-b);
 }
 
-multiplicacion(int a,int b){
+float multiplicacion(int a,int b){
 	cout<<"Ingrese el primer numero"<<endl;
 	cin>> a;
 	cout<<"Ingrese el segundo numero"<<endl;
@@ -28,17 +28,13 @@ multiplicacion(int a,int b){
 	return(a*b);
 }
 
-division(int a,int b){
+float division(int a,int b){
 	cout<<"Ingrese el primer numero"<<endl;
 	cin>> a;
 	cout<<"Ingrese el segundo numero"<<endl;
 	cin>> b;
 	return(a/b);
 }
-
-
-
-
 
 
 int main(){
@@ -79,7 +75,6 @@ int main(){
 	}	
 	}while(vol != 1 || vol != 2);
 
-	
 	return 0;
 }
 

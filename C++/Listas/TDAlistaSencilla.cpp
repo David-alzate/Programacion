@@ -5,7 +5,7 @@ using namespace std;
 
 struct TDAlistaSencilla
 {
-    nodo *cab;
+    nodo *cab;  
     nodo *col;
 };
 
