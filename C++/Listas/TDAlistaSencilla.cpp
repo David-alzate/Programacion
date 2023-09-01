@@ -7,6 +7,7 @@ struct TDAlistaSencilla
 {
     nodo *cab;  
     nodo *col;
+    nodo *aux;
 };
 
 
@@ -36,9 +37,81 @@ void mostrar(TDAlistaSencilla & lista){
     if (lista.cab == NULL){
         cout<< "Error" <<endl;
     }else{
-        cout<< lista.cab <<endl;
-        cout<< lista.col <<endl;  
+        Imprimir(lista.cab);
+        Imprimir(lista.col);
 }
+}
+
+void mostrarTodo(TDAlistaSencilla  lista){
+    nodo *aux;
+    aux = lista.cab;
+    while (aux != NULL)
+    {
+       Imprimir(aux);
+       aux = aux -> Sig;
+    }
+    
+}
+
+bool tienedatos(TDAlistaSencilla lista){
+    if (lista.cab != NULL){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+void insertarAlInicio(TDAlistaSencilla lista){
+    if (lista.cab == NULL){
+       lista= crearlista(lista);
+    }else if (lista.cab != NULL)
+    {
+        nodo *nuevo = crearNodo();
+        nuevo -> Sig = lista.cab;
+        lista.cab = nuevo;
+    }
+}
+
+void insertarAlFin(TDAlistaSencilla lista){
+    if (lista.col == NULL){
+        lista=crearlista(lista);
+    }else if(lista.col != NULL){
+        nodo *nuevo = crearNodo();
+        lista.col -> Sig = nuevo;
+    }
+}
+
+nodo* buscar(TDAlistaSencilla lista, TDAFecha feBuscar){
+    bool encontrado = false;
+    nodo *temp = lista.cab;
+    while ((temp != NULL && !encontrado))
+    {
+        if (temp -> feInicio.d == feBuscar.d && temp -> feInicio.m == feBuscar.m && temp ->feInicio.year == feBuscar.year ){
+                   encontrado = true;
+    }else{
+        temp = temp -> Sig;
+    } 
+    return temp;
+    }
+}
+
+void instertarDespues(TDAlistaSencilla lista, TDAFecha febuscar){
+    if (lista.cab == NULL)
+    cout<<"Error";
+    else {
+        nodo *aux=buscar(lista,febuscar);
+        if (aux==NULL)
+        cout<<"Error";
+        else {
+            if (aux==lista.col){
+            insertarAlFin(lista);}
+
+            else{ nodo *nuevo=crearNodo();
+              nuevo->Sig= aux->Sig;
+              aux->Sig=nuevo;
+            }   
+        }  
+    }
 }
 
 
@@ -47,7 +120,9 @@ int main() {
     inicializarLista(lista);
 
     lista = crearlista(lista);
-    mostrar(lista);
+    mostrarTodo(lista);
+    insertarAlInicio(lista);
+
     
     return 0;
 }
