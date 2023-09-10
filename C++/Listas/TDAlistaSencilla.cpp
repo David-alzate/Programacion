@@ -31,16 +31,8 @@ void eliminarLista(TDAlistaSencilla & lista){
     lista.col = NULL;
 }
 
-// consultar primer y ultimo nodo
 
-void mostrar(TDAlistaSencilla & lista){
-    if (lista.cab == NULL){
-        cout<< "Error" <<endl;
-    }else{
-        Imprimir(lista.cab);
-        Imprimir(lista.col);
-}
-}
+
 
 void mostrarTodo(TDAlistaSencilla  lista){
     nodo *aux;
@@ -51,6 +43,25 @@ void mostrarTodo(TDAlistaSencilla  lista){
        aux = aux -> Sig;
     }
     
+}
+
+void mostrarInfoPrimerNodo(TDAlistaSencilla lista){
+	if (lista.cab==NULL){
+		cout<<"Error"<<endl;
+	}
+	else {
+		Imprimir(lista.cab);
+	}
+}
+
+void mostrarultimo(TDAlistaSencilla lista){
+    if (lista.col==NULL){
+		cout<<"Error"<<endl;
+	}
+	else {
+		Imprimir(lista.col);
+	}
+
 }
 
 bool tienedatos(TDAlistaSencilla lista){
@@ -91,8 +102,8 @@ nodo* buscar(TDAlistaSencilla lista, TDAFecha feBuscar){
     }else{
         temp = temp -> Sig;
     } 
-    return temp;
     }
+    return temp;
 }
 
 void instertarDespues(TDAlistaSencilla lista, TDAFecha febuscar){
@@ -114,15 +125,65 @@ void instertarDespues(TDAlistaSencilla lista, TDAFecha febuscar){
     }
 }
 
-
-int main() {
-    TDAlistaSencilla lista;
-    inicializarLista(lista);
-
-    lista = crearlista(lista);
-    mostrarTodo(lista);
-    insertarAlInicio(lista);
-
-    
-    return 0;
+void eliminarAlInicio(TDAlistaSencilla & lista){
+    if (lista.cab == NULL){
+        cout<< "Error" <<endl;
+    }else
+    {
+         nodo *aux = lista.cab;
+        lista.cab = lista.cab -> Sig;
+        delete aux;
+        cout<< "Nodo Borrado" <<endl;
+    }
 }
+
+nodo* buscarDireccion (TDAlistaSencilla ls, TDAFecha fecbuscar){
+	bool encontrado = false;
+	nodo *temp = ls.cab;
+	while (temp != NULL and ! encontrado){
+		if (temp->feInicio.d == fecbuscar.d and
+			temp->feInicio.m == fecbuscar.m and
+			temp->feInicio.year == fecbuscar.year)
+			encontrado = true;
+		else
+			temp = temp->Sig;
+	}
+	return temp;
+}
+
+void eliminarAlFin(TDAlistaSencilla & lista){
+    if (lista.cab == NULL){
+        cout<< "Error" <<endl;
+    }else
+    {
+        nodo *aux = lista.cab;
+        while (aux -> Sig = NULL)
+        {
+            aux = aux -> Sig;
+        }
+        lista.col = aux;
+        aux -> Sig = NULL;
+        delete lista.col;
+        cout<< "Nodo eliminado" <<endl;
+        
+    }
+}
+
+void eliminarNodo(TDAlistaSencilla & lista, TDAFecha fecha){
+    nodo *borrar = buscarDireccion(lista,fecha);
+    if(borrar == nullptr){
+        cout<< "Error" <<endl;
+    }else{
+        nodo *aux = lista.cab;
+        while(aux -> Sig != borrar){
+            aux = aux -> Sig;
+        }
+    aux -> Sig = borrar -> Sig;
+    delete borrar;
+    cout<< "Borrado" <<endl;
+    }
+    
+}
+
+
+

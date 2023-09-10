@@ -53,6 +53,7 @@ TDAFecha LeerFecha()
             cout<<" Fecha invalida,  Vuelve a Ingresarla "<<endl;
             LeerFecha();
         }
+        return Fecha;
 }
 
 nodo *crearNodo()
