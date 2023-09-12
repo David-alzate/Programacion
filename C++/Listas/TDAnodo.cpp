@@ -51,9 +51,8 @@ TDAFecha LeerFecha()
             return Fecha;
         else {
             cout<<" Fecha invalida,  Vuelve a Ingresarla "<<endl;
-            LeerFecha();
+            return LeerFecha();
         }
-        return Fecha;
 }
 
 nodo *crearNodo()
@@ -64,9 +63,9 @@ nodo *crearNodo()
     cout<<"    FECHA DE INICIO"<<endl;
     nuevo->feInicio = LeerFecha();
     cout<<"----------------------------------------------"<<endl;
-    cout<<"    FECHA DE FIN"<<endl;
+/*    cout<<"    FECHA DE FIN"<<endl;
     nuevo->feFin    = LeerFecha();
-    nuevo->Sig=NULL;
+    nuevo->Sig=NULL;*/
     return nuevo;
 
 }
@@ -78,13 +77,13 @@ void Imprimir(nodo *Imp)
     }
     else{
         cout<<"Fecha-Inicio"<<endl;
-        cout<<Imp->feInicio.d<<endl;
-        cout<<Imp->feInicio.m<<endl;
+        cout<<Imp->feInicio.d<<" ";
+        cout<<Imp->feInicio.m<<" ";
         cout<<Imp->feInicio.year<<endl;
-        cout<<"Fecha Fin"<<endl;
+    /*    cout<<"Fecha Fin"<<endl;
         cout<<Imp->feFin.d<<endl;
         cout<<Imp->feFin.m<<endl;
-        cout<<Imp->feFin.year<<endl;
+        cout<<Imp->feFin.year<<endl;*/
     }
 }
 
