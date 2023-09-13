@@ -5,5 +5,8 @@
         "numbers": "cpp",
         "sstream": "cpp",
         "new": "cpp"
-    }
+    },
+    "cSpell.words": [
+        "nodo"
+    ]
 }
