@@ -21,16 +21,41 @@ void agregarPila(nodo *&pila, int n){
     
 }
 
+// Sacar elemento de la pila 
+
+void sacarPila(nodo *&pila,int &n){
+    nodo *aux = pila;
+    n = aux -> dato;
+    pila = aux -> siguiente;
+    delete aux;
+}
+
 
 int main() {
 
 nodo *pila = NULL;
-int n1,n2;
+int dato;
 
 cout<< "ingrese un numero" <<endl;
-cin>> n1;
-agregarPila(pila,n1);
-      
+cin>> dato;
+agregarPila(pila,dato);
+
+cout<< "ingrese un numero" <<endl;
+cin>> dato;
+agregarPila(pila,dato);
+
+cout<< "Sacando elementos de la lista" <<endl;
+
+while (pila != NULL)
+{
+    sacarPila(pila,dato);
+    if (pila != NULL){
+        cout<< dato<<",";
+    }else{
+        cout<< dato <<".";
+    }
+}
+
 
 
     return 0;
