@@ -4,7 +4,8 @@
         "ostream": "cpp",
         "numbers": "cpp",
         "sstream": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "vector": "cpp"
     },
     "cSpell.words": [
         "nodo"
