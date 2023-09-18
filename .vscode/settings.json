@@ -5,7 +5,8 @@
         "numbers": "cpp",
         "sstream": "cpp",
         "new": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "random": "cpp"
     },
     "cSpell.words": [
         "nodo"
