@@ -5,6 +5,7 @@ using namespace std;
 struct cola {
     nodo *cab;
     nodo *col;
+    nodo *tiempo;
 };
 void mostrarInfoPrimerNodo(cola col){
 	if (col.cab==NULL){
