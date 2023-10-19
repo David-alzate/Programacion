@@ -1,60 +1,40 @@
 #include <iostream>
-
 using namespace std;
 
-struct TDANodoAB
-{
+struct nodoAB {
     int cod;
-    string nombre;
-    string apellido;
-    string direccion;
-    TDANodoAB *izq;
-    TDANodoAB *Der;
 };
 
-TDANodoAB *crearNodo(){
-    TDANodoAB *nuevo = new(TDANodoAB);
-    cout<< "Ingrese el codigo" <<endl;
-    cin>> nuevo -> cod;
-    cout<< "ingrese el nombre" <<endl;
-    cin>> nuevo -> nombre;
-    cout<< "Ingrese el apellido" <<endl;
-    cin>> nuevo -> apellido;
-    cout<< "ingrese la direccion " <<endl;
-    cin>> nuevo -> direccion;
-    nuevo -> izq = NULL;
-    nuevo -> Der = NULL;
-
-    return nuevo;
+nodoAB* crearNodo() {
+    nodoAB* nueva = new nodoAB;
+    cout << "Ingresar el cod: ";
+    cin >> nueva->cod;
+    cout << "Ingresar su nombre: ";
+    cin >> nueva->nombre;
+    cout << "Ingresar apellido: ";
+    cin >> nueva->apellido;
+    cout << "Ingresar su direccion: ";
+    cin >> nueva->direccion;
+    nueva->izq = NULL;
+    nueva->der = NULL;
+    return nueva;
 }
 
-TDANodoAB *crearNodo(int cod, string nombre, string apellido, string direccion){
-    TDANodoAB *nuevo = new(TDANodoAB);
-    nuevo ->cod = cod;
-    nuevo ->nombre = nombre;
-    nuevo -> apellido = apellido;
-    nuevo -> izq = NULL;
-    nuevo -> Der = NULL;
-    return nuevo;
+nodoAB* crearNodo(int cod, string nombre,
+                  string apellido, string direccion) {
+    nodoAB* nueva = new nodoAB;
+    nueva->cod=cod;
+    nueva->nombre=nombre;
+    nueva->apellido=apellido;
+    nueva->direccion=direccion;
+    nueva->izq = NULL;
+    nueva->der = NULL;
+    return nueva;
 }
 
-void mostrarInformacion(TDANodoAB *Imp){
-    if(Imp==NULL){
-        cout<<"No hay datos";
-    }
-    else{
-        cout<<"Datos"<<endl;
-        cout<<Imp->cod<<" ";
-        cout<<Imp->nombre<<" ";
-        cout<<Imp->apellido<<" ";
-        cout<<Imp->direccion<<endl;
-    }
-
-
-}
-
-int main(){
-
-
-    return 0;
+void mostrarDatos(nodoAB* imprimir) {
+    cout << "El c�digo del usuario es: " << imprimir->cod << endl;
+    cout << "El nombre del usuario es: " << imprimir->nombre << endl;
+    cout << "El apellido del usuario es: " << imprimir->apellido << endl;
+    cout << "La direcci�n del usuario es: " << imprimir->direccion << endl;
 }
