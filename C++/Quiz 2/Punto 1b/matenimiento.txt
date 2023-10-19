@@ -1,0 +1,101 @@
+VALENTÍN-Intel Core i9-12900KS-Derramamiento de líquidos-Apple.
+VALENTINA-Fujitsu A64FX-Golpes-Dell.
+VALERIA-Ryzen 7 7800X3D-Derramamiento de líquidos-Acer.
+VALERIO-Intel Core i9-12900KS-Golpes-HP.
+VANESA-Epyc 7742-Virus y malware.-Acer.
+CRISTINA-Intel Core i9-12900K-Mal uso del equipo-Apple.
+CELSO-Intel Core i7-13700K-Golpes-Apple.
+CÉSAR-Ryzen 7 7700X-Sobrecalentamiento.-Dell.
+CESÁREO-AMD Threadripper 2990 WX-Virus y malware.-Apple.
+CINTIA-AMD Threadripper 2990 WX-Virus y malware.-Dell.
+LEONOR-Intel Core i5-13600K-Derramamiento de líquidos-Apple.
+LEONORA-EPYC 64C de 3ra. generación optimizada-Derramamiento de líquidos-HP.
+LEOPOLDO-EPYC 64C de 3ra. generación optimizada-Derramamiento de líquidos-Acer.
+LETICIA-EPYC 64C de 3ra. generación optimizada-Sobrecalentamiento.-Dell.
+MANUEL-Epyc 7742-Mal uso del equipo-Dell.
+MARCELO-Fujitsu A64FX-Golpes-Apple.
+MARCOS-Intel Core i9-12900KS-Mal uso del equipo-Lenovo.
+MARGARITA-Intel Core i7-13700K-Golpes-Lenovo.
+PEDRO-AMD Threadripper 2990 WX-Sobrecalentamiento.-Lenovo.
+PENÉLOPE-Intel Core i9-12900KS-Derramamiento de líquidos-HP.
+PERLA-AMD Threadripper 2990 WX-Golpes-Apple.
+PILAR-Intel Core i9-12900K-Mal uso del equipo-Dell.
+PIEDAD-Ryzen 7 7700X-Derramamiento de líquidos-Dell.
+ABRAHAM-Ryzen 9 7900X3D-Mal uso del equipo-Lenovo.
+ABRIL-Epyc 7742-Derramamiento de líquidos-HP.
+ADA-Ryzen 7 7700X-Mal uso del equipo-Apple.
+ADALBERTO-Sunway SW26010-Sobrecalentamiento.-Acer.
+ADÁN-EPYC 64C de 3ra. generación optimizada-Golpes-Lenovo.
+ADELA-AMD Threadripper 3960X-Derramamiento de líquidos-HP.
+ADELAIDA-AMD Threadripper 2990 WX-Virus y malware.-Apple.
+ADELINA-Ryzen 7 7700X-Mal uso del equipo-Lenovo.
+ADELMO-AMD Threadripper 3960X-Mal uso del equipo-Apple.
+ADOLFO-Fujitsu A64FX-Derramamiento de líquidos-HP.
+ADRIÁN-Intel Core i9-13900K/KS-Sobrecalentamiento.-HP.
+ADRIANO-EPYC 64C de 3ra. generación optimizada-Derramamiento de líquidos-Acer.
+ÁGATA-Ryzen 7 7800X3D-Sobrecalentamiento.-Acer.
+ÁGUEDA-Intel Core i7-13700K-Virus y malware.-Apple.
+AGUSTÍN-Intel Core i9-12900KS-Mal uso del equipo-HP.
+AÍDA-Intel Core i9-12900K-Mal uso del equipo-Lenovo.
+AINARA-Ryzen 7 7700X-Derramamiento de líquidos-Dell.
+ALAN-Intel Core i9-13900K/KS-Derramamiento de líquidos-Apple.
+ALBANO-EPYC 64C de 3ra. generación optimizada-Derramamiento de líquidos-Apple.
+ALBERTO-Ryzen 9 7950X3D-Sobrecalentamiento.-HP.
+ALCIRA-Ryzen 7 7800X3D-Virus y malware.-Lenovo.
+ALDO-AMD Threadripper 3960X-Derramamiento de líquidos-HP.
+ALEJANDRO-Intel Core i9-12900KS-Virus y malware.-Acer.
+ALEJANDRA-Intel Core i9-12900KS-Virus y malware.-Lenovo.
+ALEJO-Ryzen 9 7950X3D-Derramamiento de líquidos-Lenovo.
+ALFONSO-Ryzen 7 7800X3D-Golpes-Lenovo.
+ALFREDO-Intel Core i7-13700K-Derramamiento de líquidos-Lenovo.
+ALICIA-Intel Core i9-12900KS-Virus y malware.-Dell.
+ALINA-AMD Threadripper 2990 WX-Sobrecalentamiento.-Acer.
+ALMUDENA-EPYC 64C de 3ra. generación optimizada-Derramamiento de líquidos-Dell.
+ALONSO-Intel Core i7-13700K-Mal uso del equipo-Apple.
+ÁLVARO-AMD Threadripper 2990 WX-Derramamiento de líquidos-Dell.
+AMADEO-Epyc 7742-Golpes-HP.
+AMALIA-Intel Core i5-13600K-Golpes-Lenovo.
+AMANCIO-Intel Core i9-12900KS-Derramamiento de líquidos-Apple.
+AMANDA-Ryzen 7 7800X3D-Mal uso del equipo-Dell.
+AMARANTO-EPYC 64C de 3ra. generación optimizada-Sobrecalentamiento.-Lenovo.
+AMAYA-Intel Core i9-12900K-Derramamiento de líquidos-Dell.
+AMOS-Intel Core i9-12900K-Sobrecalentamiento.-Lenovo.
+AMBROSIO-Ryzen 9 7950X3D-Golpes-Dell.
+AMELIA-Intel Core i5-13600K-Sobrecalentamiento.-Lenovo.
+AMIRA-AMD Threadripper 2990 WX-Golpes-Apple.
+AMPARO-AMD Threadripper 2990 WX-Golpes-Acer.
+ANA-Intel Core i9-13900K/KS-Mal uso del equipo-Acer.
+ANACLETO-Ryzen 9 7950X3D-Virus y malware.-Dell.
+ANASTASIA-AMD Threadripper 3960X-Mal uso del equipo-Acer.
+ANDER-Epyc 7742-Virus y malware.-HP.
+ANDRÉS-Intel Core i9-12900KS-Mal uso del equipo-Dell.
+ÁNGEL/A-AMD Threadripper 3960X-Virus y malware.-Acer.
+ANGÉLICA-Intel Core i5-13600K-Mal uso del equipo-Apple.
+ÁNGELES-Fujitsu A64FX-Golpes-HP.
+ANÍBAL-Ryzen 9 7900X3D-Sobrecalentamiento.-Dell.
+ANICETO-Sunway SW26010-Sobrecalentamiento.-Lenovo.
+ANGUSTIAS-AMD Threadripper 3960X-Mal uso del equipo-Dell.
+ANSELMO-Intel Core i9-13900K/KS-Derramamiento de líquidos-HP.
+ANTONIO-Intel Core i7-13700K-Mal uso del equipo-HP.
+ANTONIA-Epyc 7742-Virus y malware.-Lenovo.
+ANTONIETA-Ryzen 9 7900X3D-Golpes-Acer.
+APOLO-AMD Threadripper 2990 WX-Virus y malware.-Dell.
+AQUILES-Intel Core i7-13700K-Virus y malware.-Apple.
+AQUILINO-Ryzen 9 7950X3D-Golpes-Dell.
+ARACELI-EPYC 64C de 3ra. generación optimizada-Virus y malware.-Acer.
+ARCHIBALDO-Intel Core i9-13900K/KS-Derramamiento de líquidos-Dell.
+ARIADNA-Intel Core i5-13600K-Derramamiento de líquidos-Acer.
+ARIEL-EPYC 64C de 3ra. generación optimizada-Virus y malware.-Acer.
+ARÍSTIDES-Epyc 7742-Golpes-Lenovo.
+ARMANDO-Fujitsu A64FX-Sobrecalentamiento.-Apple.
+ARNOLDO-Ryzen 9 7900X3D-Mal uso del equipo-Dell.
+ARTURO-Intel Core i7-13700K-Mal uso del equipo-Lenovo.
+ASUNCIÓN-Ryzen 9 7900X3D-Sobrecalentamiento.-Dell.
+ATANASIO-Sunway SW26010-Golpes-HP.
+AUGUSTO-Ryzen 9 7900X3D-Virus y malware.-Apple.
+AURELIO-AMD Threadripper 2990 WX-Sobrecalentamiento.-Apple.
+AURELIA-Fujitsu A64FX-Mal uso del equipo-HP.
+AURORA-Epyc 7742-Sobrecalentamiento.-Apple.
+AUXILIADORA-Intel Core i9-13900K/KS-Mal uso del equipo-Lenovo.
+AXEL-Ryzen 9 7950X3D-Golpes-Lenovo.
+AZUZENA-Intel Core i7-13700K-Sobrecalentamiento.-Apple.
