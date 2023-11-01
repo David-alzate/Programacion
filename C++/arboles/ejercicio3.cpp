@@ -28,3 +28,16 @@ int contarMenores(nodoAB *arbol, int valor){
     return contador;
 }
 
+// metodo que devuelva el numero mayor de un arbol
+
+int mayor(nodoAB *arbol){
+    int mayor=0;
+    nodoAB *aux=arbol;
+    while(tieneDatos(aux)){
+        if(aux->cod>mayor){
+            mayor=aux->cod;
+        }
+        aux=aux->der;
+    }
+    return mayor;
+}
