@@ -78,6 +78,17 @@ void insertarALfin(ListaSencilla ls)
     }
 }
 
+void InsertarAlFinal(ListaSencilla & ls){
+	if (ls.cab == NULL){
+		ls = crearLista(ls);
+	}
+	else {
+		nodo *nuevo = crearNodo();
+		ls.col->Sig= nuevo;
+		ls.col = nuevo;
+	}
+}
+
 bool buscarFecha (ListaSencilla ls, TDAFecha fecbuscar){
 	bool encontrado = false;
 	nodo *temp = ls.cab;
@@ -118,16 +129,7 @@ void InsertarAlInicio(ListaSencilla & ls){
 }
 
 
-void InsertarAlFinal(ListaSencilla & ls){
-	if (ls.cab == NULL){
-		ls = crearLista(ls);
-	}
-	else {
-		nodo *nuevo = crearNodo();
-		ls.col->Sig= nuevo;
-		ls.col = nuevo;
-	}
-}
+
 
 //insertar un nodo despues de otro
 void InsertarDespuesdeOtro(ListaSencilla ls, TDAFecha fe){

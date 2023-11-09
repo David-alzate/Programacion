@@ -47,7 +47,36 @@ void esAdyacente(grafo* g, vertice* V1, vertice* V2){
     cout << "No son adyacentes" << endl;
 }
 
+void borrarVertice(grafo* G, vertice* V)
+{
+    vertice* aux = G->cab;
+    if (G->cab == V)
+    {
+        G->cab = G->cab->sig;
+        delete aux;
+    }
+    else
+    {
+        while (aux->sig != V)
+        {
+            aux = aux->sig;
+        }
+        aux->sig = V->sig;
+        delete V;
+    }
+}
 
+void unirVertices(grafo* G, vertice* V1, vertice* V2)
+{
+    nodoAdya* aux = V1->listaAdy;
+    while (aux->sig != nullptr)
+    {
+        aux = aux->sig;
+    }
+    aux->sig = new nodoAdya;
+    aux->sig->vert = V2;
+    aux->sig->sig = nullptr;
+}
 int main()
 {
     grafo G;

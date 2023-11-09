@@ -3,9 +3,15 @@ using namespace std;
 
 struct nodoAB {
     int cod;
+    string nombre;
+    string apellido;
+    string direccion;
+    nodoAB* izq;
+    nodoAB* der;
+
 };
 
-nodoAB* crearNodo() {
+nodoAB* crearNodoPedirDatos() {
     nodoAB* nueva = new nodoAB;
     cout << "Ingresar el cod: ";
     cin >> nueva->cod;

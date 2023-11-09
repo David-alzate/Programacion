@@ -1,4 +1,36 @@
-#include "TDANodoAB.cpp"
+#include <iostream>
+using namespace std;
+
+// estructura arboles
+struct nodoAB
+{
+    int dato;
+    nodoAB *izq;
+    nodoAB *der;
+};
+
+nodoAB *crearNodoPedirDatos(){
+    nodoAB *nuevo = new nodoAB;
+    cout<<"Ingresar el dato: ";
+    cin>>nuevo->dato;
+    nuevo->izq = NULL;
+    nuevo->der = NULL;
+    return nuevo;
+}
+     
+nodoAB *crearNodo(int dato)
+{
+    nodoAB *nuevo = new nodoAB;
+    nuevo->dato = dato;
+    nuevo->izq = NULL;
+    nuevo->der = NULL;
+    return nuevo;
+}
+
+void mostrarDatos(nodoAB *imprimir)
+{
+    cout<<"El dato es: "<<imprimir->dato<<endl;
+}
 
 bool tieneDatos (nodoAB *arbol){
     if(arbol!=NULL){
@@ -8,30 +40,31 @@ bool tieneDatos (nodoAB *arbol){
     }
 }
 
-bool buscarCod (nodoAB *arbol, int cod){
+bool buscarDato (nodoAB *arbol, int dato){
      if(arbol==NULL){
         return false;
     }
     else
-        if (arbol->cod==cod){
+        if (arbol->dato==dato){
             return true;
         }
         else
-            if (cod<arbol->cod){
-                return buscarCod(arbol->izq, cod);
+            if (dato<arbol->dato){
+                return buscarDato(arbol->izq, dato);
             }
             else{
-                return buscarCod(arbol->der,  cod);
+                return buscarDato(arbol->der,  dato);
             }
 }
-bool buscarNodoNR (nodoAB *raiz, int cod){
+
+bool buscarDatoNr (nodoAB *raiz, int dato){
     bool encontrado = false;
     nodoAB *aux =raiz;
     while (aux!=NULL && !encontrado){
-        if (aux->cod==cod)
+        if (aux->dato==dato)
             encontrado = true;
         else
-            if (cod < aux->cod)
+            if (dato < aux->dato)
                 aux = aux->izq;
             else
                 aux =aux->der;
@@ -39,14 +72,14 @@ bool buscarNodoNR (nodoAB *raiz, int cod){
     return encontrado;
 }
 
-void ingresarNodos(nodoAB **arbol){
+void ingresarNodos(nodoAB **arbol, int dato){
     // Caso 1
     if (!tieneDatos(*arbol)){
-        *arbol = crearNodoPedirDatos();
+        *arbol = crearNodo(dato);
     }
     else{
-        nodoAB *nuevo = crearNodoPedirDatos();
-        if (buscarCod(*arbol, nuevo->cod)){
+        nodoAB *nuevo = crearNodo(dato);
+        if (buscarDato(*arbol, nuevo->dato)){
             cout<<"Error";
         }
         else{
@@ -54,24 +87,16 @@ void ingresarNodos(nodoAB **arbol){
             nodoAB *ant;
             while(aux != NULL){
                 ant = aux;
-                if (aux->cod > nuevo->cod)
+                if (aux->dato > nuevo->dato)
                     aux = aux->izq;
                 else
                     aux = aux->der;
             }
-            if (nuevo->cod > ant->cod)
+            if (nuevo->dato > ant->dato)
                 ant ->der = nuevo;
             else
                 ant ->izq = nuevo;
         }
-    }
-}
-
-void Inorden(nodoAB *arbol){
-    if (arbol!=NULL){
-        Inorden(arbol->izq);
-        mostrarDatos(arbol);
-        Inorden(arbol->der);
     }
 }
 
@@ -92,14 +117,14 @@ void Postorden(nodoAB *arbol){
 }
 
 void EliminarNodos(nodoAB **arbol, int codigo){
-    if(!buscarNodoNR(*arbol, codigo)){
+    if(!buscarDatoNr(*arbol, codigo)){
         cout<<"El dato no existe"<<endl;
     }else{
         nodoAB *aux = *arbol;
         nodoAB *ant = NULL;
-        while (aux->cod != codigo){
+        while (aux->dato != codigo){
             ant = aux;
-            if (aux->cod > codigo){
+            if (aux->dato > codigo){
                 aux = aux->izq;
             }else{
                 aux = aux->der;
